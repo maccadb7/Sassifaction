@@ -21,8 +21,36 @@
 
 	@import "base/_fonts.scss";
 
-// Put Your stuff here
-	@import "partials/base/_page.scss";
+
+
+
+
+
+
+// -------------------------------------
+//   import the partials
+// -------------------------------------
+
+
+// Base
+
+@import "layout/_base.scss";
+
+
+
+
+
+// Scratch
+// Make sure this is at the end of this import file
+
+@import "../other/_scratch.scss";
+
+
+
+
+
+
+
 
 // Print styles
 	@import "base/_print.scss";
