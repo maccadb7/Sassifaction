@@ -9,17 +9,17 @@ Body Copy
 
 	<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
 
-	<strong>	rendered as bold text</strong>
+	<strong>rendered as bold text</strong>
 
 	<em>rendered as italic text</em>
 */
 
 p {
-
+	font-family: $body-font;
 }
 
 small {
-
+	font-family: $body-font;
 }
 
 strong {
