@@ -1,0 +1,27 @@
+/*
+
+Main Navigation
+===============
+
+    <nav role="navigation">
+        <ul>
+            <li><a href="">A main link</a></li>
+            <li><a href="">A main link</a></li>
+            <li><a href="">A main link</a></li>
+            <li><a href="">A main link</a></li>
+        </ul>
+    </nav>
+
+*/
+
+nav[role="navigation"] {
+	> ul {
+
+	}
+	li {
+
+	}
+	a {
+
+	}
+}
