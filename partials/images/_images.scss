@@ -1,0 +1,25 @@
+/*
+
+Images
+======
+
+    <img alt="" class="img-rounded" src="" />
+    <img alt="" class="img-circle" src="" />
+    <img alt="" class="img-polaroid" src="" />
+
+*/
+
+.img-rounded {
+	border-radius: 4px;
+}
+
+.img-circle {
+	border-radius: 500px;
+}
+
+.img-polaroid {
+	padding: 12px;
+	background-color: white;
+	border: 1px solid #c6bfbf;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
