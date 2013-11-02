@@ -29,3 +29,8 @@ strong {
 em {
 
 }
+
+::-moz-selection, ::selection {
+	background-color: $base-color;
+	color: $white; // check this
+}
