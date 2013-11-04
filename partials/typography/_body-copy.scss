@@ -18,6 +18,11 @@ p {
 	font-family: $body-font;
 }
 
+/* --- used if wanting to style the first paragraph slightly differently --- */
+.lead {
+
+}
+
 small {
 	font-family: $body-font;
 }
@@ -29,6 +34,7 @@ strong {
 em {
 
 }
+
 
 ::-moz-selection, ::selection {
 	background-color: $base-color;

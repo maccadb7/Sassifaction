@@ -18,8 +18,8 @@ Images
 }
 
 .img-polaroid {
-	background-color: white;
-	border: 1px solid #c6bfbf;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	background-color: $white;
+	border: 1px solid lighten($black, 90%);
+	box-shadow: 0 1px 3px rgba(0,0,3px,0.2);
 	padding: 12px;
 }

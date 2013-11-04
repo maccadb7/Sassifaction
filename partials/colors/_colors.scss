@@ -43,10 +43,11 @@ Colors
 */
 
 .swatch {
-	clear: both;
-	float: left;
+  clear: both;
+  float: left;
+  max-width: 640px;
 	li {
-		background-color: $base-color;
+    border-radius: 8px;
 		float: left;
 		height: 120px;
 		list-style: none;
@@ -55,95 +56,33 @@ Colors
 	}
 }
 
-.swatch--base {
-	li {
-		background-color: $base-color;
-		&:nth-child(2) {
-			background-color: colorize($base-color, l1);
-		}
-		&:nth-child(3) {
-			background-color: colorize($base-color, l2);
-		}
-		&:nth-child(4) {
-			background-color: colorize($base-color, l3);
-		}
-		&:nth-child(5) {
-			background-color: colorize($base-color, l4);
-		}
-		&:nth-child(6) {
-			clear: both;
-			background-color: colorize($base-color, d1);
-		}
-		&:nth-child(7) {
-			background-color: colorize($base-color, d2);
-		}
-		&:nth-child(8) {
-			background-color: colorize($base-color, d3);
-		}
-		&:nth-child(9) {
-			background-color: colorize($base-color, d4);
-		}
-	}
+
+$base-colors: $base-color, colorize($base-color, l1), colorize($base-color, l2), colorize($base-color, l3), colorize($base-color, l4), colorize($base-color, d1), colorize($base-color, d2), colorize($base-color, d3), colorize($base-color, d4), $base-color;
+
+@for $i from 1 through length($base-colors) {
+  .swatch--base  {
+    li:nth-child(#{$i}) {
+        background: nth($base-colors, $i)
+    }
+  }
 }
 
-.swatch--comp {
-	li {
-		background-color: $comp-color;
-		&:nth-child(2) {
-			background-color: colorize($comp-color, l1);
-		}
-		&:nth-child(3) {
-			background-color: colorize($comp-color, l2);
-		}
-		&:nth-child(4) {
-			background-color: colorize($comp-color, l3);
-		}
-		&:nth-child(5) {
-			background-color: colorize($comp-color, l4);
-		}
-		&:nth-child(6) {
-			clear: both;
-			background-color: colorize($comp-color, d1);
-		}
-		&:nth-child(7) {
-			background-color: colorize($comp-color, d2);
-		}
-		&:nth-child(8) {
-			background-color: colorize($comp-color, d3);
-		}
-		&:nth-child(9) {
-			background-color: colorize($comp-color, d4);
-		}
-	}
+$comp-colors: $comp-color, colorize($comp-color, l1), colorize($comp-color, l2), colorize($comp-color, l3), colorize($comp-color, l4), colorize($comp-color, d1), colorize($comp-color, d2), colorize($comp-color, d3), colorize($comp-color, d4), $comp-color;
+
+@for $i from 1 through length($comp-colors) {
+  .swatch--comp {
+    li:nth-child(#{$i}) {
+        background: nth($comp-colors, $i)
+    }
+  }
 }
 
-.swatch--tertiary {
-	li {
-		background-color: $tertiary-color;
-		&:nth-child(2) {
-			background-color: colorize($tertiary-color, l1);
-		}
-		&:nth-child(3) {
-			background-color: colorize($tertiary-color, l2);
-		}
-		&:nth-child(4) {
-			background-color: colorize($tertiary-color, l3);
-		}
-		&:nth-child(5) {
-			background-color: colorize($tertiary-color, l4);
-		}
-		&:nth-child(6) {
-			clear: both;
-			background-color: colorize($tertiary-color, d1);
-		}
-		&:nth-child(7) {
-			background-color: colorize($tertiary-color, d2);
-		}
-		&:nth-child(8) {
-			background-color: colorize($tertiary-color, d3);
-		}
-		&:nth-child(9) {
-			background-color: colorize($tertiary-color, d4);
-		}
-	}
+$tertiary-colors: $tertiary-color, colorize($tertiary-color, l1), colorize($tertiary-color, l2), colorize($tertiary-color, l3), colorize($tertiary-color, l4), colorize($tertiary-color, d1), colorize($tertiary-color, d2), colorize($tertiary-color, d3), colorize($tertiary-color, d4), $tertiary-color;
+
+@for $i from 1 through length($tertiary-colors) {
+  .swatch--tertiary {
+    li:nth-child(#{$i}) {
+        background: nth($tertiary-colors, $i)
+    }
+  }
 }
