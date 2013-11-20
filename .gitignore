@@ -50,3 +50,7 @@ css/
 /*.sublime-project
 *.sublime-workspace
 sftp-config*.json
+
+
+*.css
+*.json
