@@ -2,7 +2,7 @@
 	@import "base/_mixins.scss";
 
 // Variables
-	@import "base/_variables.scss";
+	@import "_variables.scss";
 
 // Normalize
 	@import "base/_bizarro.scss";
@@ -34,7 +34,7 @@
 
 // Base
 
-@import "layout/_base.scss";
+@import "partials/layout/_base.scss";
 
 
 
@@ -43,8 +43,11 @@
 // Scratch
 // Make sure this is at the end of this import file
 
-@import "../other/_scratch.scss";
+@import "partials/site-specific/_scratch.scss";
 
+// Shame, shame know your SCSS needs fixing in this file
+
+@import "partials/site-specific/_shame.scss";
 
 
 
